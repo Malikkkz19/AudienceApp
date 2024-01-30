@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.main {
+  position: relative;
+  background-color: #6fd6d0;
+  width: 154px;
+  height: 144px;
+  margin-top: -5px;
+  border-radius: 22px;
+  border: 2px solid #686363;
+}
+
+.up {
+  background-color: white;
+  position: absolute;
+  border: 1px solid #686363;
+  width: 140px;
+  height: 36px;
+  border-radius: 15px;
+  left: 6px;
+  top: 7px;
+  color: black;
+  overflow: hidden;
+}
+
+.down {
+  position: absolute;
+  width: 138px;
+  height: 86px;
+  background-color: #b1e1a5;
+  border: 1px solid #686363;
+  border-radius: 15px;
+  left: 6px;
+  bottom: 6px;
+}
+
+.main_close {
+  position: relative;
+}
+
+.up_close {
+  position: absolute;
+}
+
+.down_close {
+  position: absolute;
+}

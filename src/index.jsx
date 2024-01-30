@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./assets/global.css";
-import App from "./App.jsx";
+import "./assets/styles/global.css";
+import Home from "./components/screens/Home/Home";
+import Layout from "./components/Layout/Layout";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Layout>
+      <Home />
+    </Layout>
   </React.StrictMode>
 );
