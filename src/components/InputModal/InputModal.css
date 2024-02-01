@@ -14,6 +14,12 @@
   pointer-events: none;
 }
 
+.audience {
+  position: absolute;
+  top: 15px;
+  left: 115px;
+}
+
 .image {
   position: absolute;
   height: 150px;
@@ -49,6 +55,9 @@ h1 {
   background-color: #434548;
   color: white;
   border: 3px solid #515050;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .button_close {
@@ -61,45 +70,30 @@ h1 {
   right: 10px;
 }
 
-.description {
-  position: absolute;
-  bottom: 15%;
-  line-height: 250%;
-  font-size: 1em;
-  font-weight: 600;
-}
-
-.group_number {
-  position: absolute;
-  right: -20%;
-}
-
-.group_duty {
-  position: absolute;
-  right: -41%;
-}
-
-.group_type_aud {
-  position: absolute;
-  right: -34%;
-}
-
-.group_amount {
-  position: absolute;
-  right: -15%;
-}
-
-.audience {
-  text-shadow: 2px 2px 3px black;
-}
-
-img {
-  position: absolute;
-  height: 145px;
-  width: 130px;
+.auto_input {
+  position: relative;
+  height: 60px;
+  width: 300px;
+  padding: 20px;
+  background-color: #cec8c8;
+  border: 1px solid black;
   border-radius: 20px;
-  border: none;
-  left: 0;
-  top: 0;
-  z-index: 1000;
+  top: -150%;
+  left: 13%;
+}
+
+.auto_input:hover {
+  background-color: #a8a4a4;
+  transition: all 0.4s;
+}
+
+.auto_text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  position: absolute;
+  left: 13%;
+  top: 23%;
+}
+
+.manual_input {
 }

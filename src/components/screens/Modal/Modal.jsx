@@ -14,13 +14,35 @@ const Modal = ({ active, setActive }) => {
           e.stopPropagation();
         }}
       >
-        <h1>Аудитория 219</h1>
+        <h1 className="audience">Аудитория 219</h1>
         <div className="image">
-          <img></img>
+          <img src="./girl.jpeg" alt="" />
         </div>
         <button className="button_close">
-          <IoClose size={30} />
+          <IoClose
+            size={30}
+            className="button_close_icon"
+            onClick={() => setActive(false)}
+          />
         </button>
+
+        <div className="description">
+          <p>
+            <b>Учебная группа:</b> <span className="group_number">611/11</span>
+          </p>
+          <p>
+            <b>Дежурный:</b>
+            <span className="group_duty">Низамидинов М.Ф.</span>
+          </p>
+          <p>
+            <b>Вид аудитории:</b>
+            <span className="group_type_aud">Лабораторный</span>
+          </p>
+          <p>
+            <b>Количество посадочных мест:</b>
+            <span className="group_amount">18</span>
+          </p>
+        </div>
       </div>
     </div>
   );
